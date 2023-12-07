@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701811754
+::res://::1701984359
 ::res://Art/::1701808106
 ::res://Art/Sprout Lands - Sprites - Basic pack/::1701808106
 read_me.txt::TextFile::-1::1701808106::0::1::::<><>::
@@ -31,7 +31,8 @@ Hills.png::CompressedTexture2D::1792620359547648145::1701808106::1701808107::1::
 Tilled Dirt.png::CompressedTexture2D::4162256350300830314::1701808106::1701808107::1::::<><>::
 Water.png::CompressedTexture2D::2491470382179754038::1701808106::1701808107::1::::<><>::
 Wooden House.png::CompressedTexture2D::3298277133656176581::1701808106::1701808107::1::::<><>::
-::res://Characters/::1701811738
-node_2d.tscn::PackedScene::2648801939881995104::1701811738::0::1::::<><>::uid://dvhw5rj8nwhdt::::res://Art/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png
-::res://Level/::1701808703
-node_2d.tscn::PackedScene::1906841314095224064::1701808703::0::1::::<><>::
+::res://Characters/::1701984317
+node_2d.tscn::PackedScene::2648801939881995104::1701984317::0::1::::<><>::uid://dvhw5rj8nwhdt::::res://Art/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png<>res://Characters/player_cat.gd
+player_cat.gd::GDScript::-1::1701984317::0::1::::<>CharacterBody2D<>::
+::res://Level/::1701981568
+node_2d.tscn::PackedScene::1906841314095224064::1701981568::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Characters/node_2d.tscn
