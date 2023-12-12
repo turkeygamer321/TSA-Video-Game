@@ -1,2 +1,3 @@
-res://Characters/player_cat.tscn
-res://Level/game_level.tscn
+res://Level/node_2d.tscn
+res://Characters/node_2d.tscn
+res://Characters/player_cat.gd

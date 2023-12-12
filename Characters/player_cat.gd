@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var moves_speed : float = 100
+@export var moves_speed : float = 45
 
 func _physics_process(_delta):
 	# Get input direction
@@ -14,3 +14,4 @@ func _physics_process(_delta):
 	
 	#Move and Slide function uses velocity of character body to move character on map
 	move_and_slide()
+
