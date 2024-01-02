@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgahhvjwmbtkx"
-path="res://.godot/imported/Basic tools and meterials.png-ecbd769a229559eef2da7a06968d1224.ctex"
+uid="uid://ej8aqhn4xku8"
+path="res://.godot/imported/Lvl1Door.png-7ef8796e18922e95226ca0648b6d8ed5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprout Lands - Sprites - Basic pack/Objects/Basic tools and meterials.png"
-dest_files=["res://.godot/imported/Basic tools and meterials.png-ecbd769a229559eef2da7a06968d1224.ctex"]
+source_file="res://Art/NextLevel/Lvl1Door.png"
+dest_files=["res://.godot/imported/Lvl1Door.png-7ef8796e18922e95226ca0648b6d8ed5.ctex"]
 
 [params]
 

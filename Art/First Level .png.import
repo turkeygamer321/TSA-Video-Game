@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1tmc1e70fda8"
-path="res://.godot/imported/Free Cow Sprites.png-07578b5e63b4c1c6fd854dcd8463fc11.ctex"
+uid="uid://d201eelaqljxa"
+path="res://.godot/imported/First Level .png-1b3a2cc2259150d5a8b24a6735b56068.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprout Lands - Sprites - Basic pack/Characters/Free Cow Sprites.png"
-dest_files=["res://.godot/imported/Free Cow Sprites.png-07578b5e63b4c1c6fd854dcd8463fc11.ctex"]
+source_file="res://Art/First Level .png"
+dest_files=["res://.godot/imported/First Level .png-1b3a2cc2259150d5a8b24a6735b56068.ctex"]
 
 [params]
 
