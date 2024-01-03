@@ -1,2 +1,6 @@
+res://Characters/player_cat.tscn
 res://Level/L1.tscn
+res://Level/L2.tscn
 res://Art/NextLevel/DoorLvl1.tscn
+res://Level/Area2D1.gd
+res://Level/Area2D2.gd

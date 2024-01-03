@@ -1,16 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1704163859
+::res://::1704240174
 ::res://Art/::1704162441
-::res://Art/NextLevel/::1704163821
-DoorLvl1.tscn::PackedScene::1316980791676274331::1704163821::0::1::::<><>::uid://ej8aqhn4xku8::::res://Art/NextLevel/Lvl1Door.png
+::res://Art/NextLevel/::1704164029
+DoorLvl1.tscn::PackedScene::1316980791676274331::1704164029::0::1::::<><>::uid://ej8aqhn4xku8::::res://Art/NextLevel/Lvl1Door.png
 Lvl1Door.png::CompressedTexture2D::301339286917524569::1704163270::1704163333::1::::<><>::
 ::res://Art/Tiles/::1704161842
 Lvl1.png::CompressedTexture2D::8484192294738593681::1703980955::1704161842::1::::<><>::
 Lvl2.png::CompressedTexture2D::856237877679915571::1704158534::1704158629::1::::<><>::
-::res://Characters/::1704161647
+::res://Characters/::1704240376
+Basic Charakter Spritesheet.png::CompressedTexture2D::3613835011855405396::1644660782::1704240380::1::::<><>::
 node_2d.tscn::PackedScene::800879042468937603::1703975519::0::1::::<><>::uid://dvhw5rj8nwhdt::::res://Art/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png<>res://Characters/player_cat.gd
 player_cat.gd::GDScript::-1::1704155275::0::1::::<>CharacterBody2D<>::
 player_cat.tscn::PackedScene::2648801939881995104::1704161647::0::1::::<><>::uid://dvhw5rj8nwhdt::::res://Art/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png<>res://Characters/player_cat.gd
-::res://Level/::1704163823
-L1.tscn::PackedScene::1906841314095224064::1704163823::0::1::::<><>::uid://d201eelaqljxa::::res://Art/First Level .png<>uid://bd0dm7nb7hh2w::::res://Characters/player_cat.tscn<>uid://s07qmkddqbtb::::res://Art/NextLevel/DoorLvl1.tscn
+::res://Level/::1704164297
+L1.tscn::PackedScene::1906841314095224064::1704164297::0::1::::<><>::uid://d201eelaqljxa::::res://Art/First Level .png<>uid://bd0dm7nb7hh2w::::res://Characters/player_cat.tscn<>uid://s07qmkddqbtb::::res://Art/NextLevel/DoorLvl1.tscn
 L2.tscn::PackedScene::2396176673460464848::1704161647::0::1::::<><>::uid://mg1d3lorbrkd::::res://Art/Tiles/Lvl2.png<>uid://bd0dm7nb7hh2w::::res://Characters/player_cat.tscn

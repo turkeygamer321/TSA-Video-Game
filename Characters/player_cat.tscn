@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://bd0dm7nb7hh2w"]
 
-[ext_resource type="Texture2D" uid="uid://dvhw5rj8nwhdt" path="res://Art/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_82278"]
 [ext_resource type="Script" path="res://Characters/player_cat.gd" id="1_cfrpu"]
+[ext_resource type="Texture2D" uid="uid://brqtlm4mw3wo7" path="res://Characters/Basic Charakter Spritesheet.png" id="2_pgcwo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kreog"]
 size = Vector2(10, 6)
@@ -238,7 +238,7 @@ transitions = ["Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_
 script = ExtResource("1_cfrpu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_82278")
+texture = ExtResource("2_pgcwo")
 hframes = 4
 vframes = 4
 

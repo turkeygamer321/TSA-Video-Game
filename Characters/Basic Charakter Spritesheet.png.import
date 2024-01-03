@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ej8aqhn4xku8"
-path="res://.godot/imported/Lvl1Door.png-7ef8796e18922e95226ca0648b6d8ed5.ctex"
+uid="uid://brqtlm4mw3wo7"
+path="res://.godot/imported/Basic Charakter Spritesheet.png-8d725513394505b52316fa01a4adcf90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/NextLevel/Lvl1Door.png"
-dest_files=["res://.godot/imported/Lvl1Door.png-7ef8796e18922e95226ca0648b6d8ed5.ctex"]
+source_file="res://Characters/Basic Charakter Spritesheet.png"
+dest_files=["res://.godot/imported/Basic Charakter Spritesheet.png-8d725513394505b52316fa01a4adcf90.ctex"]
 
 [params]
 
