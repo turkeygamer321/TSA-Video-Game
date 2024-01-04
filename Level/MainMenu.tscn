@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://v2y741i6ilgk"]
+
+[ext_resource type="Texture2D" uid="uid://debbjc3xptl23" path="res://Art/Tiles/Background.png" id="1_rbkcc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(245, 324)
+scale = Vector2(1.62392, 1.62392)
+texture = ExtResource("1_rbkcc")
+
+[node name="VFlowContainer" type="VFlowContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(12.2198, 16.1798)
+
+[node name="Button" type="Button" parent="VFlowContainer"]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="VFlowContainer"]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="VFlowContainer"]
+layout_mode = 2
