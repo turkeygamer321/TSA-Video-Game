@@ -1,18 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1704400553
-::res://Art/::1704399681
-::res://Art/Tiles/::1704402893
-Background.png::CompressedTexture2D::7442158741890447174::1704401803::1704402902::1::::<><>::
-Lvl1.png::CompressedTexture2D::8484192294738593681::1704225627::1704225638::1::::<><>::
-Lvl2.png::CompressedTexture2D::856237877679915571::1704225627::1704225638::1::::<><>::
-::res://Characters/::1704401196
-Basic Charakter Spritesheet.png::CompressedTexture2D::3613835011855405396::1704399681::1704399843::1::::<><>::
-node_2d.tscn::PackedScene::800879042468937603::1704225627::0::1::::<><>::uid://dvhw5rj8nwhdt::::res://Art/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png<>res://Characters/player_cat.gd
-player_cat.gd::GDScript::-1::1704225627::0::1::::<>CharacterBody2D<>::
-player_cat.tscn::PackedScene::2648801939881995104::1704401196::0::1::::<><>::res://Characters/player_cat.gd<>uid://brqtlm4mw3wo7::::res://Characters/Basic Charakter Spritesheet.png
-::res://Level/::1704402837
-Area2D1.gd::GDScript::-1::1704400445::0::1::::<>Area2D<>::
-Area2D2.gd::GDScript::-1::1704399681::0::1::::<>Area2D<>::
-L1.tscn::PackedScene::1906841314095224064::1704401196::0::1::::<><>::uid://ds42n4d5ffgs4::::res://Art/Tiles/Lvl1.png<>uid://bd0dm7nb7hh2w::::res://Characters/player_cat.tscn<>res://Level/Area2D1.gd
-L2.tscn::PackedScene::2396176673460464848::1704400249::0::1::::<><>::uid://mg1d3lorbrkd::::res://Art/Tiles/Lvl2.png<>uid://bd0dm7nb7hh2w::::res://Characters/player_cat.tscn<>res://Level/Area2D2.gd
-MainMenu.tscn::PackedScene::1531219832736951986::1704402837::0::1::::<><>::
+::res://::1704941652
+Key.gd::GDScript::-1::1704931692::0::1::::<>Sprite2D<>::
+::res://Art/::1704162441
+::res://Art/NextLevel/::1704245390
+::res://Art/Tiles/::1704921205
+Background.png::CompressedTexture2D::7442158741890447174::1704921159::1704921205::1::::<><>::
+Lvl1.png::CompressedTexture2D::8484192294738593681::1703980955::1704161842::1::::<><>::
+Lvl2.png::CompressedTexture2D::856237877679915571::1704158534::1704158629::1::::<><>::
+::res://Characters/::1704928059
+Basic Charakter Spritesheet.png::CompressedTexture2D::3613835011855405396::1644660782::1704240380::1::::<><>::
+node_2d.tscn::PackedScene::800879042468937603::1703975519::0::1::::<><>::uid://dvhw5rj8nwhdt::::res://Art/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png<>res://Characters/player_cat.gd
+player_cat.gd::GDScript::-1::1704928057::0::1::::<>CharacterBody2D<>::
+player_cat.tscn::PackedScene::2648801939881995104::1704928059::0::1::::<><>::res://Characters/player_cat.gd<>uid://brqtlm4mw3wo7::::res://Characters/Basic Charakter Spritesheet.png
+::res://Items/::1704931697
+key.tscn::PackedScene::8401506184692065910::1704931697::0::1::::<><>::res://Key.gd
+::res://Level/::1704928059
+Area2D1.gd::GDScript::-1::1704245409::0::1::::<>Area2D<>::
+Area2D2.gd::GDScript::-1::1704245919::0::1::::<>Area2D<>::
+L1.tscn::PackedScene::1906841314095224064::1704928059::0::1::::<><>::uid://ds42n4d5ffgs4::::res://Art/Tiles/Lvl1.png<>uid://bd0dm7nb7hh2w::::res://Characters/player_cat.tscn<>res://Level/Area2D1.gd
+L2.tscn::PackedScene::2396176673460464848::1704928059::0::1::::<><>::uid://mg1d3lorbrkd::::res://Art/Tiles/Lvl2.png<>uid://bd0dm7nb7hh2w::::res://Characters/player_cat.tscn<>res://Level/Area2D2.gd
+MainMenu.gd::GDScript::-1::1704926175::0::1::::<>Control<>::
+MainMenu.tscn::PackedScene::1531219832736951986::1704928059::0::1::::<><>::uid://debbjc3xptl23::::res://Art/Tiles/Background.png<>res://Level/MainMenu.gd
