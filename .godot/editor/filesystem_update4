@@ -4,3 +4,4 @@ res://Characters/player_cat.tscn
 res://Level/MainMenu.tscn
 res://Level/L2.tscn
 res://Items/key.tscn
+res://Level/MainMenu.gd
