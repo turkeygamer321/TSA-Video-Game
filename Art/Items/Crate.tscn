@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://csmvk337b05ak"]
+
+[ext_resource type="Texture2D" uid="uid://cobtoami4fij6" path="res://Art/Items/Crate.png" id="1_k06v1"]
+
+[node name="Node2D" type="Sprite2D"]
+position = Vector2(277, 302)
+scale = Vector2(0.51088, 0.51088)
+texture = ExtResource("1_k06v1")

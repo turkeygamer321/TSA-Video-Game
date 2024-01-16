@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@export var moves_speed : float = 200
+@export var moves_speed : float = 300
 
 func _physics_process(_delta):
 	# Get input direction

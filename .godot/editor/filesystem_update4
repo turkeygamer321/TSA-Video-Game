@@ -1,5 +1,8 @@
 res://Level/MainMenu.tscn
-res://Art/Characters/player_cat.gd
 res://Level/L1.tscn
 res://Level/L2.tscn
 res://Level/L3.tscn
+res://Level/L5.tscn
+res://Art/Characters/player_cat.gd
+res://Art/Characters/player_cat.tscn
+res://Art/Items/Crate.tscn

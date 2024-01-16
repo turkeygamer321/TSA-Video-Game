@@ -236,6 +236,7 @@ states/Walk/position = Vector2(463, 100)
 transitions = ["Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_f02cq"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_5347h"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_t0q3l")]
 
 [node name="PlayerCat" type="CharacterBody2D"]
+scale = Vector2(0.874474, 1.16043)
 script = ExtResource("1_cfrpu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -254,12 +255,9 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_bsm5b")
-}
 tree_root = SubResource("AnimationNodeStateMachine_fvk5b")
-advance_expression_base_node = NodePath("../AnimationPlayer")
 anim_player = NodePath("../AnimationPlayer")
+advance_expression_base_node = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = Vector2(-0.00265723, 0.0140127)
 parameters/Walk/blend_position = Vector2(-0.339238, -0.026455)
 
