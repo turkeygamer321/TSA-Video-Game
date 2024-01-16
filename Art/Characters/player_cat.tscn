@@ -1,7 +1,8 @@
-[gd_scene load_steps=28 format=3 uid="uid://bd0dm7nb7hh2w"]
+[gd_scene load_steps=29 format=3 uid="uid://bd0dm7nb7hh2w"]
 
-[ext_resource type="Script" path="res://Characters/player_cat.gd" id="1_cfrpu"]
-[ext_resource type="Texture2D" uid="uid://brqtlm4mw3wo7" path="res://Characters/Basic Charakter Spritesheet.png" id="2_pgcwo"]
+[ext_resource type="Script" path="res://Art/Characters/player_cat.gd" id="1_cfrpu"]
+[ext_resource type="Texture2D" uid="uid://brqtlm4mw3wo7" path="res://Art/Characters/Basic Charakter Spritesheet.png" id="2_pgcwo"]
+[ext_resource type="PackedScene" uid="uid://bpho7u6axxfpr" path="res://Level/paused_menu.tscn" id="3_qhh7x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kreog"]
 size = Vector2(10, 6)
@@ -261,3 +262,7 @@ advance_expression_base_node = NodePath("../AnimationPlayer")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = Vector2(-0.00265723, 0.0140127)
 parameters/Walk/blend_position = Vector2(-0.339238, -0.026455)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PausedMenu" parent="CanvasLayer" instance=ExtResource("3_qhh7x")]
