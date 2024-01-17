@@ -1,8 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://csmvk337b05ak"]
+[gd_scene load_steps=3 format=3 uid="uid://csmvk337b05ak"]
 
 [ext_resource type="Texture2D" uid="uid://cobtoami4fij6" path="res://Art/Items/Crate.png" id="1_k06v1"]
 
-[node name="Node2D" type="Sprite2D"]
-position = Vector2(277, 302)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsjjj"]
+size = Vector2(20.4424, 19.1346)
+
+[node name="Crate" type="StaticBody2D"]
+position = Vector2(246.66, 325.489)
 scale = Vector2(0.51088, 0.51088)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -471.07
+offset_top = -633.2
+offset_right = 608.93
+offset_bottom = 543.8
 texture = ExtResource("1_k06v1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(42.5201, -20.5313)
+scale = Vector2(37.6532, 51.1484)
+shape = SubResource("RectangleShape2D_qsjjj")
