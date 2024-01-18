@@ -26,6 +26,7 @@ shape = SubResource("RectangleShape2D_qsjjj")
 
 [node name="InteractionArea" parent="." instance=ExtResource("2_3ntw4")]
 visible = false
+action_name = "Search Crate"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
 position = Vector2(88.7488, 22.5317)
