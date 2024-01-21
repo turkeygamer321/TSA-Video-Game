@@ -1,12 +1,16 @@
 res://Level/MainMenu.tscn
+res://Art/Characters/player_cat.gd
 res://Level/L1.tscn
 res://Art/Items/Interactable Items/InteractableCrate.tscn
 res://Interaction/Interaction Area/interaction_area.tscn
 res://Interaction/InteractionManager.tscn
-res://Interaction/Interaction Area/interaction_area.gd
-res://Interaction/InteractionManager.gd
-res://Level/Area2D1.gd
-res://Level/Area2D2.gd
-res://Art/Items/Key.gd
-res://Art/Items/Interactable Items/InteractableCrate.gd
 res://Level/L2.tscn
+res://Interaction/Interaction Area/interaction_area.gd
+res://Level/L4.tscn
+res://Level/L3.tscn
+res://Level/LevelGoBacker.tscn
+res://Level/Area2D1.gd
+res://Level/LevelSwitcher.tscn
+res://Level/L5.tscn
+res://Art/Items/Interactable Items/InteractableCrate.gd
+res://Interaction/InteractionManager.gd

@@ -6,8 +6,8 @@ extends StaticBody2D
 
 
 func _ready():
-	interaction_area.interact = Callable(self, "_search_crate")
+	interaction_area.interact = Callable(self, "_search")
 
 
-#func _search_crate():
-	#sprite.frame = 1 if sprite.frame == 0 else 0
+func _search():
+	sprite.frame = 1 if sprite.frame == 0 else 0

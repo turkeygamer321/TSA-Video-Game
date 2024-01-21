@@ -2731,7 +2731,7 @@ texture = ExtResource("1_r3bkl")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7kuf1")
 
-[node name="L2" type="Node2D"]
+[node name="L3" type="Node2D"]
 position = Vector2(308, -48)
 scale = Vector2(0.651041, 0.856636)
 
@@ -2748,3 +2748,9 @@ scale = Vector2(13.4624, 17.2709)
 [node name="LevelSwitcher" parent="." instance=ExtResource("3_7eahj")]
 position = Vector2(994.768, 1269.62)
 scale = Vector2(5.8, 0.087)
+
+[node name="LevelSwitcher2" parent="." instance=ExtResource("3_7eahj")]
+position = Vector2(179.712, 717.925)
+rotation = 1.57029
+scale = Vector2(3.86953, 0.058043)
+prev = -1
