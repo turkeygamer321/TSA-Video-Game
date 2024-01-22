@@ -2754,7 +2754,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_h7l6e")
 
 [node name="L1" type="Node2D"]
-position = Vector2(273, -3)
+position = Vector2(250, -3)
 scale = Vector2(2.1548, 3.08621)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -2773,23 +2773,23 @@ scale = Vector2(0.6, 0.51)
 [node name="Static Crates" type="Node" parent="."]
 
 [node name="Crate" parent="Static Crates" instance=ExtResource("4_gfcan")]
-position = Vector2(1394, 296)
+position = Vector2(1371, 296)
 scale = Vector2(0.172821, 0.190229)
 
 [node name="Crate2" parent="Static Crates" instance=ExtResource("4_gfcan")]
-position = Vector2(1524, 382)
+position = Vector2(1501, 382)
 scale = Vector2(0.172821, 0.190229)
 
 [node name="Crate3" parent="Static Crates" instance=ExtResource("4_gfcan")]
-position = Vector2(604.711, 321.264)
+position = Vector2(581.711, 321.264)
 scale = Vector2(0.172821, 0.190229)
 
 [node name="Interactable Crates" type="Node" parent="."]
 
 [node name="InteractableCrate1" parent="Interactable Crates" instance=ExtResource("5_eglf6")]
-position = Vector2(454.3, 321.264)
+position = Vector2(431.3, 321.264)
 scale = Vector2(0.19, 0.19)
 
 [node name="InteractableCrate2" parent="Interactable Crates" instance=ExtResource("5_eglf6")]
-position = Vector2(1524, 200.811)
+position = Vector2(1501, 200.811)
 scale = Vector2(0.173, 0.19)
