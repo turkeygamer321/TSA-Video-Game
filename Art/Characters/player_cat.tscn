@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Art/Characters/player_cat.gd" id="1_cfrpu"]
 [ext_resource type="Texture2D" uid="uid://brqtlm4mw3wo7" path="res://Art/Characters/Basic Charakter Spritesheet.png" id="2_pgcwo"]
-[ext_resource type="PackedScene" uid="uid://bpho7u6axxfpr" path="res://Level/paused_menu.tscn" id="3_qhh7x"]
+[ext_resource type="PackedScene" uid="uid://bpho7u6axxfpr" path="res://UI/paused_menu.tscn" id="3_qhh7x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kreog"]
 size = Vector2(10, 6)
