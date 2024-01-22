@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://drob48pymwy54"]
+[gd_scene load_steps=2 format=3 uid="uid://drob48pymwy54"]
+
+[ext_resource type="Texture2D" uid="uid://j5qp4wabvcgd" path="res://Art/Character Holdable Items/Crowbar.png.png" id="1_tsolx"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -13,9 +15,33 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 40.0
+offset_left = -542.0
+offset_right = 2937.0
+offset_bottom = 2180.0
 grow_horizontal = 0
+scale = Vector2(0.151333, 0.151333)
+columns = 3
 
 [node name="Button" type="Button" parent="GridContainer"]
 layout_mode = 2
+icon = ExtResource("1_tsolx")
+
+[node name="Button2" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_tsolx")
+
+[node name="Button3" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_tsolx")
+
+[node name="Button4" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_tsolx")
+
+[node name="Button5" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_tsolx")
+
+[node name="Button6" type="Button" parent="GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_tsolx")

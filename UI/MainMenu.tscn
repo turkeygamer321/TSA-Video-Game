@@ -15,7 +15,7 @@ script = ExtResource("1_hvtgu")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(938, 543)
-scale = Vector2(6.25076, 4.1022)
+scale = Vector2(6.25076, 4.57081)
 texture = ExtResource("2_8dxpf")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
