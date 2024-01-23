@@ -16,10 +16,12 @@ anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -542.0
-offset_right = 2937.0
-offset_bottom = 2180.0
+offset_right = 2989.0
+offset_bottom = 2206.0
 grow_horizontal = 0
 scale = Vector2(0.151333, 0.151333)
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
 columns = 3
 
 [node name="Button" type="Button" parent="GridContainer"]

@@ -1,8 +1,10 @@
 res://UI/Hotbar.tscn
+res://Art/Characters/player_cat.gd
+res://Level/Area2D1.gd
 res://Level/L1.tscn
 res://Art/Items/Interactable Items/InteractableCrate.tscn
 res://Interaction/Interaction Area/interaction_area.tscn
 res://Interaction/InteractionManager.tscn
 res://Level/L5.tscn
-res://UI/MainMenu.tscn
 res://Art/Characters/player_cat.tscn
+res://UI/MainMenu.tscn
