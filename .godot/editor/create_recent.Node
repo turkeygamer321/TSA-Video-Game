@@ -1,3 +1,4 @@
+CanvasLayer
 Button
 TextureButton
 GridContainer
@@ -12,7 +13,3 @@ TextureRect
 Node2D
 StaticBody2D
 Node
-InteractionArea
-AnimatedSprite2D
-Label
-Area2D

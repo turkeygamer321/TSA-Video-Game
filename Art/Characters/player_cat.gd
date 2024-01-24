@@ -11,7 +11,6 @@ func _physics_process(_delta):
 	)
 	#Update velocity
 	velocity = input_direction.normalized() * moves_speed
-	print(velocity)
 	
 	#Move and Slide function uses velocity of character body to move character on map
 	move_and_slide()

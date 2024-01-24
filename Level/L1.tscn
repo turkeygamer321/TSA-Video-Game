@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b2hcdbwbao2jk" path="res://Level/LevelSwitcher.tscn" id="3_6od3w"]
 [ext_resource type="PackedScene" uid="uid://csmvk337b05ak" path="res://Art/Items/Crate.tscn" id="4_gfcan"]
 [ext_resource type="PackedScene" uid="uid://c0vhw6b116dhy" path="res://Art/Items/Interactable Items/InteractableCrate.tscn" id="5_eglf6"]
-[ext_resource type="PackedScene" uid="uid://drob48pymwy54" path="res://UI/Hotbar.tscn" id="6_th37d"]
+[ext_resource type="PackedScene" uid="uid://t4uhvc3mmwhy" path="res://UI/Game_Level.tscn" id="6_5ycsy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h7l6e"]
 texture = ExtResource("1_yr126")
@@ -2795,9 +2795,4 @@ scale = Vector2(0.19, 0.19)
 position = Vector2(1251, 199.225)
 scale = Vector2(0.173, 0.19)
 
-[node name="Control" parent="." instance=ExtResource("6_th37d")]
-offset_left = 891.034
-offset_top = 0.972066
-offset_right = 891.034
-offset_bottom = 0.972066
-scale = Vector2(0.374124, 0.374124)
+[node name="Game_Level" parent="." instance=ExtResource("6_5ycsy")]

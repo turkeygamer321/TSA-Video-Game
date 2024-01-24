@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://baeyxd07pt1t1"]
+[gd_scene load_steps=7 format=3 uid="uid://baeyxd07pt1t1"]
 
 [ext_resource type="Texture2D" uid="uid://bd8umxfk7e7kb" path="res://Art/Tiles/Lvl5.png" id="1_720p7"]
 [ext_resource type="PackedScene" uid="uid://bd0dm7nb7hh2w" path="res://Art/Characters/player_cat.tscn" id="2_hfelb"]
 [ext_resource type="PackedScene" uid="uid://b2hcdbwbao2jk" path="res://Level/LevelSwitcher.tscn" id="3_3litl"]
+[ext_resource type="PackedScene" uid="uid://t4uhvc3mmwhy" path="res://UI/Game_Level.tscn" id="4_giilv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j81ea"]
 texture = ExtResource("1_720p7")
@@ -2098,7 +2099,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_j81ea")
 
 [node name="L5" type="Node2D"]
-position = Vector2(-147, -80)
+position = Vector2(-423, -83)
 scale = Vector2(1.14753, 1.14753)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -2117,3 +2118,5 @@ position = Vector2(480, 584)
 rotation = 1.5708
 scale = Vector2(2.96, 0.166667)
 prev = -1
+
+[node name="Game_Level" parent="." instance=ExtResource("4_giilv")]
