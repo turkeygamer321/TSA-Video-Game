@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://q0tjbnr1g38g"]
+[gd_scene load_steps=24 format=3 uid="uid://q0tjbnr1g38g"]
 
 [ext_resource type="Texture2D" uid="uid://dhmt23lxxmerj" path="res://Art/Tiles/Lvl4.png" id="1_r307y"]
 [ext_resource type="PackedScene" uid="uid://bd0dm7nb7hh2w" path="res://Art/Characters/Alex.tscn" id="2_uxnln"]
@@ -7,7 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://b26y5u72bmgkq" path="res://Art/Items/Interactable Items/everything else/Mattress (1).png" id="5_qhdr6"]
 [ext_resource type="PackedScene" uid="uid://u0pldoa4t3gq" path="res://Art/Items/Interactable Items/L1/boxuninteractable.tscn" id="6_oi1e4"]
 [ext_resource type="Texture2D" uid="uid://biufjokkip2eo" path="res://Art/Items/Interactable Items/everything else/TSA teddy bear for game (1)-1.png (1).png" id="7_7ru6k"]
+[ext_resource type="Texture2D" uid="uid://cg76wk1j5a8k1" path="res://Art/Items/Interactable Items/everything else/TSA_ Soccer ball for game -1.png.png" id="8_mfl41"]
 [ext_resource type="Texture2D" uid="uid://cam5vgxbgxu6d" path="res://Art/Items/Interactable Items/everything else/Skateboard.png" id="8_nv2mx"]
+[ext_resource type="Script" path="res://Level/SkateBoard.gd" id="9_boxen"]
+[ext_resource type="Script" path="res://Level/Ball.gd" id="9_ocm5k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hdgpd"]
 texture = ExtResource("1_r307y")
@@ -2074,6 +2077,15 @@ height = 2838.91
 [sub_resource type="CircleShape2D" id="CircleShape2D_krt5n"]
 radius = 9.97623
 
+[sub_resource type="Curve2D" id="Curve2D_lq8oa"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -157.892, -345.629, 204.934, 12.7528, -204.934, -12.7528, -921.628, -333.652, 32.7894, 314.57, -32.7894, -314.57, -1730.23, -595.163, -213.131, 34.0076, 213.131, -34.0076, -1046.25, -1127.2, -163.947, 212.547, 163.947, -212.547, -69.5569, -1445.83, 274.611, -4.25095, -274.611, 4.25095, -257.94, -1794.51, 0, 0, 0, 0, -382.563, -2077.06)
+}
+point_count = 7
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dtca8"]
+radius = 127.413
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ab5jc"]
 atlas = ExtResource("8_nv2mx")
 region = Rect2(0, 0, 256, 256)
@@ -2180,10 +2192,34 @@ position = Vector2(984.186, 286.679)
 scale = Vector2(-8.88637, -8.08089)
 shape = SubResource("CircleShape2D_krt5n")
 
+[node name="Path2D" type="Path2D" parent="Items"]
+position = Vector2(1225, 1165.18)
+scale = Vector2(0.451576, 0.361261)
+curve = SubResource("Curve2D_lq8oa")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Items/Path2D"]
+position = Vector2(-382.563, -2077.06)
+rotation = -1.98619
+progress = 4638.65
+
+[node name="Ball" type="Sprite2D" parent="Items/Path2D/PathFollow2D"]
+position = Vector2(-19.1047, -252.731)
+rotation = -3.12591
+scale = Vector2(1, 1)
+texture = ExtResource("8_mfl41")
+script = ExtResource("9_ocm5k")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Items/Path2D/PathFollow2D/Ball"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Items/Path2D/PathFollow2D/Ball/StaticBody2D"]
+position = Vector2(0, -124.879)
+shape = SubResource("CircleShape2D_dtca8")
+
 [node name="SkateBoard" type="AnimatedSprite2D" parent="Items"]
 position = Vector2(1438.33, 939.308)
 sprite_frames = SubResource("SpriteFrames_y5t0t")
 frame_progress = 0.728023
+script = ExtResource("9_boxen")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Items/SkateBoard"]
 position = Vector2(-1442.25, -888.27)

@@ -34,3 +34,9 @@ res://UI/paused_menu.tscn
 res://Cat.gd
 res://Art/Items/Interactable Items/L1/cat.tscn
 res://Art/Items/Interactable Items/L1/boxuninteractable.tscn
+res://UI/MainMenu.tscn
+res://Art/Items/Interactable Items/L1/Crate.tscn
+res://Art/Items/Interactable Items/L1/InteractableCrate.gd
+res://Level/SkateBoard.gd
+res://Level/Ball.gd
+res://UI/win_screen.tscn

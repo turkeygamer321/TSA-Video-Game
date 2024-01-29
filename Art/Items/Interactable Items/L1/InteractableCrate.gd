@@ -8,6 +8,7 @@ extends StaticBody2D
 func _ready():
 	interaction_area.interact = Callable(self, "_search")
 
-
+# FIXME: inventory
 func _search():
-	hide()
+	pass
+	#hide()

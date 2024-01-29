@@ -1,9 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://baeyxd07pt1t1"]
+[gd_scene load_steps=12 format=3 uid="uid://baeyxd07pt1t1"]
 
 [ext_resource type="Texture2D" uid="uid://bd8umxfk7e7kb" path="res://Art/Tiles/Lvl5.png" id="1_720p7"]
 [ext_resource type="PackedScene" uid="uid://bd0dm7nb7hh2w" path="res://Art/Characters/Alex.tscn" id="2_hfelb"]
 [ext_resource type="PackedScene" uid="uid://b2hcdbwbao2jk" path="res://Level/LevelSwitcher.tscn" id="3_3litl"]
 [ext_resource type="PackedScene" uid="uid://t4uhvc3mmwhy" path="res://UI/Game_Level.tscn" id="4_mw006"]
+[ext_resource type="Texture2D" uid="uid://b1emivo01aw2i" path="res://Art/Items/Interactable Items/everything else/chair.png" id="5_l4unc"]
+[ext_resource type="Texture2D" uid="uid://ccuipshclpph4" path="res://Art/Items/Interactable Items/everything else/Table.png" id="6_l82sd"]
+[ext_resource type="Texture2D" uid="uid://ds5xqipwkp6xa" path="res://Art/Items/Interactable Items/everything else/rug.png" id="7_6a2v2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j81ea"]
 texture = ExtResource("1_720p7")
@@ -2098,6 +2101,12 @@ texture = ExtResource("1_720p7")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_j81ea")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hpgbb"]
+size = Vector2(53.8239, 28.8731)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x8fg8"]
+radius = 16.739
+
 [node name="L5" type="Node2D"]
 position = Vector2(-423, -83)
 scale = Vector2(1.14753, 1.14753)
@@ -2120,3 +2129,37 @@ scale = Vector2(2.96, 0.166667)
 prev = -1
 
 [node name="Game_Level" parent="." instance=ExtResource("4_mw006")]
+
+[node name="LevelSwitcher2" parent="." instance=ExtResource("3_3litl")]
+position = Vector2(1362.93, 127.23)
+scale = Vector2(2.84745, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+z_index = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(752.05, 827.865)
+scale = Vector2(0.547681, 0.547681)
+texture = ExtResource("5_l4unc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(748.45, 888.108)
+scale = Vector2(2.72424, 2.72424)
+shape = SubResource("RectangleShape2D_hpgbb")
+
+[node name="Rug" type="Sprite2D" parent="."]
+position = Vector2(957.709, 844.422)
+scale = Vector2(1.01033, 1.14976)
+texture = ExtResource("7_6a2v2")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(972.523, 877.537)
+scale = Vector2(0.436594, 0.436594)
+texture = ExtResource("6_l82sd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(969.038, 874.923)
+scale = Vector2(6.71413, 3.28048)
+shape = SubResource("CircleShape2D_x8fg8")

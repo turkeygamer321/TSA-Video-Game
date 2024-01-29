@@ -13,9 +13,8 @@ func _ready():
 	update_slots()
 
 func update_slots():
-	pass
-##	for i in range(min(inv.items.size(), slots.size())):
-#		slots[i].update(inv.items[i])
+	for i in range(min(inv.items.size(), slots.size())):
+		slots[i].update(inv.items[i])
 "
 
 [node name="Inv_UI" type="Control"]

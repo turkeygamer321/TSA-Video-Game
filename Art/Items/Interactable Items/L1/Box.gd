@@ -12,7 +12,8 @@ func _ready():
 
 
 func _search():
-	sprite.frame = 1 if sprite.frame == 0 else 0
+	sprite.frame = int(sprite.frame == 0)
+	
 #	player = StaticBody2D
 #	player.collect(item)
 	

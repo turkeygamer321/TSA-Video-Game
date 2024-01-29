@@ -1,6 +1,6 @@
 extends Control
 
-@export var time = 35
+@export var time = 300
 @onready var colors = [Color.YELLOW, Color.RED]
 @onready var red = false
 
@@ -17,6 +17,6 @@ func _on_timer_timeout():
 		$Label.set_modulate(colors[int(red)])
 		$CameraShake.apply_shake()
 	if (time == 0):
-		get_tree().change_scene_to_file("res://UI/Game_Level.tscn")
+		get_tree().change_scene_to_file("res://UI/Game_Over.tscn")
 		$Label.visible = false
 		emit_signal("timer_finished")

@@ -49,20 +49,16 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -898.0
-offset_top = 610.0
-offset_right = -828.0
-offset_bottom = 711.0
+offset_left = -929.0
+offset_top = 742.0
+offset_right = -859.0
+offset_bottom = 843.0
 grow_horizontal = 2
 scale = Vector2(5.14758, 4.17925)
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Start"
-
-[node name="OptionsButton" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "Options"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -75,5 +71,4 @@ stream = ExtResource("5_5rs6s")
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

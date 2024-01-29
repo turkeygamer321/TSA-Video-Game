@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctsr67hofoywj"]
+
+[ext_resource type="Script" path="res://UI/Game_Over.gd" id="1_xrj77"]
+
+[node name="Game Over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xrj77")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.25098, 0.243137, 0.25098, 0.705882)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1540.0
+offset_top = -940.0
+offset_right = -1257.0
+offset_bottom = -817.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(4.22376, 6.57383)
+theme_override_constants/v_separation = 8
+
+[node name="Label" type="Label" parent="GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "A Midnight Escape"
+
+[node name="RestartButton" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Restart"
+
+[node name="QuitButton" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="GridContainer/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="GridContainer/QuitButton" to="." method="_on_quit_button_pressed"]
