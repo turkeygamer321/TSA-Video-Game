@@ -1,0 +1,78 @@
+[gd_scene load_steps=3 format=3 uid="uid://cl4sb73s6g0jq"]
+
+[ext_resource type="PackedScene" uid="uid://dykrrmgtoam4a" path="res://Inventory/inv_ui_slot.tscn" id="2_ludlf"]
+
+[sub_resource type="GDScript" id="GDScript_pwq05"]
+script/source = "extends Control
+
+@onready var inv: Inv = preload(\"res://Inventory/playerinv.tres\")
+@onready var slots: Array = $ColorRect/GridContainer.get_children()
+
+func _ready():
+##	inv.update.connect(update_slots())
+	update_slots()
+
+func update_slots():
+	pass
+##	for i in range(min(inv.items.size(), slots.size())):
+#		slots[i].update(inv.items[i])
+"
+
+[node name="Inv_UI" type="Control"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -662.0
+offset_top = 11.0
+offset_right = -602.0
+offset_bottom = 71.0
+grow_horizontal = 0
+scale = Vector2(11.0362, 11.0362)
+script = SubResource("GDScript_pwq05")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 60.0
+offset_bottom = 59.0
+color = Color(0, 0, 0, 1)
+
+[node name="GridContainer" type="GridContainer" parent="ColorRect"]
+layout_mode = 1
+offset_left = 3.17137
+offset_top = 1.72489
+offset_right = 49.1714
+offset_bottom = 47.7249
+scale = Vector2(1.82233, 1.82233)
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
+columns = 3
+
+[node name="Inv_UI_slot1" parent="ColorRect/GridContainer" instance=ExtResource("2_ludlf")]
+layout_mode = 2
+
+[node name="Inv_UI_slot2" parent="ColorRect/GridContainer" instance=ExtResource("2_ludlf")]
+layout_mode = 2
+
+[node name="Inv_UI_slot3" parent="ColorRect/GridContainer" instance=ExtResource("2_ludlf")]
+layout_mode = 2
+
+[node name="Inv_UI_slot4" parent="ColorRect/GridContainer" instance=ExtResource("2_ludlf")]
+layout_mode = 2
+
+[node name="Inv_UI_slot5" parent="ColorRect/GridContainer" instance=ExtResource("2_ludlf")]
+layout_mode = 2
+
+[node name="Inv_UI_slot6" parent="ColorRect/GridContainer" instance=ExtResource("2_ludlf")]
+layout_mode = 2
+
+[node name="Inv_UI_slot7" parent="ColorRect/GridContainer" instance=ExtResource("2_ludlf")]
+layout_mode = 2
+
+[node name="Inv_UI_slot8" parent="ColorRect/GridContainer" instance=ExtResource("2_ludlf")]
+layout_mode = 2
+
+[node name="Inv_UI_slot9" parent="ColorRect/GridContainer" instance=ExtResource("2_ludlf")]
+layout_mode = 2

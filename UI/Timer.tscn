@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://21avngq8lrtt"]
+
+[ext_resource type="Script" path="res://UI/Timer.gd" id="1_3876n"]
+[ext_resource type="PackedScene" uid="uid://t2qr4f8xn46h" path="res://UI/CameraShake.tscn" id="2_8suf3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3876n")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1477.0
+offset_top = 784.0
+offset_right = 1514.0
+offset_bottom = 807.0
+scale = Vector2(12.8198, 12.8198)
+
+[node name="CameraShake" parent="." instance=ExtResource("2_8suf3")]
+shakeFade = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

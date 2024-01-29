@@ -1,18 +1,31 @@
+res://Art/Characters/Alex.tscn
 res://Level/L1.tscn
-res://Art/Characters/player_cat.tscn
-res://Art/Items/Interactable Items/InteractableCrate.tscn
-res://Interaction/Interaction Area/interaction_area.tscn
-res://Interaction/InteractionManager.tscn
-res://Level/L5.tscn
-res://UI/Hotbar.tscn
-res://UI/MainMenu.tscn
+res://UI/Game_Level.tscn
+res://UI/CameraShake.tscn
 res://Level/LevelSwitcher.tscn
 res://Level/Area2D1.gd
-res://Interaction/Interaction Area/interaction_area.gd
-res://UI/Level/L1.tscn
-res://UI/Level/L5.tscn
-res://Art/Characters/player_cat.gd
+res://UI/Timer.gd
+res://UI/Timer.tscn
 res://Level/L2.tscn
-res://UI/Game_Level.tscn
 res://Level/L3.tscn
 res://Level/L4.tscn
+res://Level/L5.tscn
+res://UI/Hotbar.tscn
+res://Inventory/inventory_item.gd
+res://inventory.gd
+res://Art/Characters/Alex.gd
+res://Inventory/Inv_UI.gd
+res://Inventory/inv_ui.tscn
+res://Inventory/inv_ui_slot.tscn
+res://Inventory/playerinv.tres
+res://Inventory/inv_ui_slot.gd
+res://Level/LevelSwitcher.gd
+res://Art/Items/Interactable Items/L1/node_2d.tscn
+res://Art/Items/Interactable Items/L1/Box.tscn
+res://Art/Items/Interactable Items/L1/InteractableCrate.tscn
+res://Art/Items/Interactable Items/L1/Box.gd
+res://Inventory/Items/crowbar.tres
+res://Inv_slot.gd
+res://Inventory/inventory.gd
+res://Art/Items/Interactable Items/L1/key.tscn
+res://UI/Game_Over.tscn

@@ -1,25 +1,32 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706072843
+::res://::1706502112
+export_presets.cfg::TextFile::-1::1706501762::0::1::::<><>::
+Inv_slot.gd::GDScript::-1::1706492929::0::1::::InvSlot<>Resource<>::
 ::res://Art/::1706053542
 ::res://Art/Character Holdable Items/::1706053564
 Crowbar.png.png::CompressedTexture2D::694630741321937167::1706053542::1706053564::1::::<><>::
-::res://Art/Characters/::1706072915
-Basic Charakter Spritesheet.png::CompressedTexture2D::3613835011855405396::1706053542::1706053563::1::::<><>::
+::res://Art/Characters/::1706500568
+Alex.gd::GDScript::-1::1706494391::0::1::::<>CharacterBody2D<>::
+Alex.tscn::PackedScene::2648801939881995104::1706500568::0::1::::<><>::res://Art/Characters/Alex.gd<>uid://8pou6sui6m7i::::res://Art/Characters/Character_SpriteSheet.png<>uid://7qhf5mjydr8i::::res://Inventory/playerinv.tres<>uid://bpho7u6axxfpr::::res://UI/paused_menu.tscn
+Character_SpriteSheet.png::CompressedTexture2D::2348084917093760240::1706400718::1706401264::1::::<><>::
 Crowbar.png::CompressedTexture2D::5954286422872660519::1706053542::1706053576::1::::<><>::
-player_cat.gd::GDScript::-1::1706072915::0::1::::<>CharacterBody2D<>::
-player_cat.tscn::PackedScene::2648801939881995104::1706072844::0::1::::<><>::res://Art/Characters/player_cat.gd<>uid://brqtlm4mw3wo7::::res://Art/Characters/Basic Charakter Spritesheet.png<>uid://bpho7u6axxfpr::::res://UI/paused_menu.tscn
 ::res://Art/Fonts/::1706053542
 ::res://Art/Fonts/Title Screen/::1706053563
 joystix monospace.otf::FontFile::5371873818894858381::1706053542::1706053563::1::::<><>::
-::res://Art/Items/::1706053564
-Crate.png::CompressedTexture2D::5758728198990042857::1706053542::1706053564::1::::<><>::
-Crate.tscn::PackedScene::6062307516071261914::1706053542::0::1::::<><>::uid://cobtoami4fij6::::res://Art/Items/Crate.png
+::res://Art/Items/::1706483856
+::res://Art/Items/Interactable Items/::1706483841
+::res://Art/Items/Interactable Items/L1/::1706500569
+Box.tscn::PackedScene::8771387647988085234::1706500569::0::1::::<><>::uid://bucwqx6xroa8j::::res://Art/Items/Interactable Items/L1/Cardboardbox.png<>res://Art/Items/Interactable Items/L1/Box.gd<>uid://dche3waxid3mx::::res://Interaction/Interaction Area/interaction_area.tscn<>res://Inventory/inventory_item.gd<>uid://b4g7ndntf38qd::::res://Art/Items/Interactable Items/L1/Key-1.png.png
+Cardboardbox.png::CompressedTexture2D::3795691915499482891::1706483599::1706483907::1::::<><>::
+Crate.png::CompressedTexture2D::5758728198990042857::1706053542::1706483775::1::::<><>::
+Crate.tscn::PackedScene::6062307516071261914::1706483775::0::1::::<><>::uid://cobtoami4fij6::::res://Art/Items/Interactable Items/L1/Crate.png
+InteractableCrate.gd::GDScript::-1::1706329951::0::1::::<>StaticBody2D<>::
+InteractableCrate.png::CompressedTexture2D::256532329190529928::1706053542::1706483765::1::::<><>::
+InteractableCrate.tscn::PackedScene::6571380328573486762::1706485145::0::1::::<><>::res://Art/Items/Interactable Items/L1/InteractableCrate.gd<>uid://dche3waxid3mx::::res://Interaction/Interaction Area/interaction_area.tscn<>uid://dwjbx1qv8q8o::::res://Art/Items/Interactable Items/L1/InteractableCrate.png
+Key-1.png.png::CompressedTexture2D::4436249753333291127::1706493533::1706493600::1::::<><>::
 Key.gd::GDScript::-1::1706053542::0::1::::<>RefCounted<>::
-key.tscn::PackedScene::8401506184692065910::1706053542::0::1::::<><>::res://Art/Items/Key.gd
-::res://Art/Items/Interactable Items/::1706073232
-InteractableCrate.gd::GDScript::-1::1706053542::0::1::::<>StaticBody2D<>::
-InteractableCrate.png::CompressedTexture2D::256532329190529928::1706053542::1706053564::1::::<><>::
-InteractableCrate.tscn::PackedScene::6571380328573486762::1706073232::0::1::::<><>::res://Art/Items/Interactable Items/InteractableCrate.gd<>uid://dche3waxid3mx::::res://Interaction/Interaction Area/interaction_area.tscn<>uid://dwjbx1qv8q8o::::res://Art/Items/Interactable Items/InteractableCrate.png
+key.tscn::PackedScene::8401506184692065910::1706498151::0::1::::<><>::res://Art/Items/Interactable Items/L1/Key.gd
+Box.gd::GDScript::-1::1706500568::0::1::::<>StaticBody2D<>::
 ::res://Art/Tiles/::1706053564
 Background.png::CompressedTexture2D::7442158741890447174::1706053542::1706053564::1::::<><>::
 Lvl1.png::CompressedTexture2D::5186921013609604222::1706053542::1706053564::1::::<><>::
@@ -27,24 +34,59 @@ Lvl2.png::CompressedTexture2D::5092877536297188961::1706053542::1706053564::1:::
 Lvl3.png::CompressedTexture2D::4987538268976012015::1706053542::1706053564::1::::<><>::
 Lvl4.png::CompressedTexture2D::7676559817615122123::1706053542::1706053564::1::::<><>::
 Lvl5.png::CompressedTexture2D::2666348666131745781::1706053542::1706053564::1::::<><>::
-::res://Interaction/::1706073232
-InteractionManager.gd::GDScript::-1::1706053542::0::1::::<>Node2D<>::
-InteractionManager.tscn::PackedScene::6143843955560563437::1706073232::0::1::::<><>::res://Interaction/InteractionManager.gd<>uid://cisf8hmkj4b7r::::res://Art/Fonts/Title Screen/joystix monospace.otf
-::res://Interaction/Interaction Area/::1706073232
-interaction_area.gd::GDScript::-1::1706072561::0::1::::InteractionArea<>Area2D<>::
-interaction_area.tscn::PackedScene::7314384409403748631::1706073232::0::1::::<><>::res://Interaction/Interaction Area/interaction_area.gd
-::res://Level/::1706073232
-Area2D1.gd::GDScript::-1::1706072560::0::1::::<>Area2D<>::
-L1.tscn::PackedScene::1906841314095224064::1706073231::0::1::::<><>::uid://cf5t3i7pncthe::::res://Art/Tiles/Lvl1.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/player_cat.tscn<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn<>uid://csmvk337b05ak::::res://Art/Items/Crate.tscn<>uid://c0vhw6b116dhy::::res://Art/Items/Interactable Items/InteractableCrate.tscn<>uid://drob48pymwy54::::res://UI/Hotbar.tscn
-L2.tscn::PackedScene::7157667446342648392::1706073232::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/player_cat.tscn<>uid://ceta7i8kfjysf::::res://Art/Tiles/Lvl2.png<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn<>uid://drob48pymwy54::::res://UI/Hotbar.tscn
-L3.tscn::PackedScene::2366094099671739384::1706072569::0::1::::<><>::uid://cdcaa50sv2ol0::::res://Art/Tiles/Lvl3.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/player_cat.tscn<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn
-L4.tscn::PackedScene::1175800710480943240::1706072569::0::1::::<><>::uid://dhmt23lxxmerj::::res://Art/Tiles/Lvl4.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/player_cat.tscn<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn
-L5.tscn::PackedScene::2396176673460464848::1706073232::0::1::::<><>::uid://bd8umxfk7e7kb::::res://Art/Tiles/Lvl5.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/player_cat.tscn<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn
-LevelSwitcher.tscn::PackedScene::4296096984120705976::1706072569::0::1::::<><>::res://Level/Area2D1.gd
-::res://UI/::1706073232
-Hotbar.tscn::PackedScene::8381487944048699689::1706073232::0::1::::<><>::uid://j5qp4wabvcgd::::res://Art/Character Holdable Items/Crowbar.png.png
+::res://Audio/::1706116769
+::res://Audio/Levels/::1706117088
+::res://Audio/Levels/Level1/::1706116219
+LevelOneMusic.mp3::AudioStreamMP3::7854562911560570965::1706112295::1706116219::1::::<><>::
+::res://Audio/Levels/Level2/::1706111935
+::res://Audio/Levels/Level3/::1706111939
+::res://Audio/Levels/Level4/::1706111943
+::res://Audio/Levels/Level5/::1706111947
+::res://Audio/Levels/Main Menu/::1706397064
+MainMenu2.mp3::AudioStreamMP3::6960333593702292925::1706132727::1706133117::1::::<><>::
+MainMenu.mp3::AudioStreamMP3::2651918826364184691::1706116898::1706133110::1::::<><>::
+Video_20240125_135534_746.mp3::AudioStreamMP3::2965213004379742331::1706209140::1706383855::1::::<><>::
+XaelSongRemastered(1).mp3::AudioStreamMP3::8251050921126863313::1706397019::1706397064::1::::<><>::
+::res://Audio/Sound Effects/::1706111833
+::res://Build/::1706502112
+RichlandTSA.apple-touch-icon.png::CompressedTexture2D::6463239497104574203::1706502112::1706502153::1::::<><>::
+RichlandTSA.icon.png::CompressedTexture2D::1241343627479088228::1706502112::1706502153::1::::<><>::
+RichlandTSA.png::CompressedTexture2D::872158905793166306::1706502112::1706502153::1::::<><>::
+::res://Interaction/::1706383946
+InteractionManager.gd::GDScript::-1::1706329927::0::1::::<>Node2D<>::
+InteractionManager.tscn::PackedScene::6143843955560563437::1706383946::0::1::::<><>::res://Interaction/InteractionManager.gd<>uid://cisf8hmkj4b7r::::res://Art/Fonts/Title Screen/joystix monospace.otf
+::res://Interaction/Interaction Area/::1706383946
+interaction_area.gd::GDScript::-1::1706115967::0::1::::InteractionArea<>Area2D<>::
+interaction_area.tscn::PackedScene::7314384409403748631::1706383946::0::1::::<><>::res://Interaction/Interaction Area/interaction_area.gd
+::res://Inventory/::1706500568
+inventory.gd::GDScript::-1::1706495325::0::1::::Inv<>Resource<>::
+inventory_item.gd::GDScript::-1::1706469168::0::1::::InvItem<>Resource<>::
+Inv_UI.gd::GDScript::-1::1706495325::0::1::::<>Control<>::
+inv_ui.tscn::PackedScene::5605882018797250438::1706500568::0::1::::<><>::uid://dykrrmgtoam4a::::res://Inventory/inv_ui_slot.tscn
+inv_ui_slot.gd::GDScript::-1::1706492793::0::1::::<>Panel<>::
+inv_ui_slot.tscn::PackedScene::8865501263737116106::1706500568::0::1::::<><>::res://Inventory/inv_ui_slot.gd
+playerinv.tres::Resource/Inv::2279508583080169318::1706492929::0::1::::<><>::res://Inventory/inventory.gd<>res://Inv_slot.gd
+::res://Inventory/Items/::1706487132
+crowbar.tres::Resource/InvItem::1115879749973897190::1706487132::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://cq3khy62cmw6r::::res://Art/Characters/Crowbar.png
+::res://Level/::1706500844
+L1.tscn::PackedScene::1906841314095224064::1706500844::0::1::::<><>::uid://cf5t3i7pncthe::::res://Art/Tiles/Lvl1.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn<>uid://csmvk337b05ak::::res://Art/Items/Interactable Items/L1/Crate.tscn<>uid://c0vhw6b116dhy::::res://Art/Items/Interactable Items/L1/InteractableCrate.tscn<>uid://t4uhvc3mmwhy::::res://UI/Game_Level.tscn<>uid://dw76qc3vgnsni::::res://Art/Items/Interactable Items/L1/Box.tscn
+L2.tscn::PackedScene::7157667446342648392::1706485144::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://ceta7i8kfjysf::::res://Art/Tiles/Lvl2.png<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Game_Level.tscn
+L3.tscn::PackedScene::2366094099671739384::1706485144::0::1::::<><>::uid://cdcaa50sv2ol0::::res://Art/Tiles/Lvl3.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Game_Level.tscn
+L4.tscn::PackedScene::1175800710480943240::1706485145::0::1::::<><>::uid://dhmt23lxxmerj::::res://Art/Tiles/Lvl4.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Game_Level.tscn
+L5.tscn::PackedScene::2396176673460464848::1706485145::0::1::::<><>::uid://bd8umxfk7e7kb::::res://Art/Tiles/Lvl5.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Game_Level.tscn
+LevelSwitcher.gd::GDScript::-1::1706479396::0::1::::<>Area2D<>::
+LevelSwitcher.tscn::PackedScene::4296096984120705976::1706482345::0::1::::<><>::res://Level/LevelSwitcher.gd
+::res://UI/::1706500956
+Camera2D.gd::GDScript::-1::1706347159::0::1::::<>Camera2D<>::
+CameraShake.tscn::PackedScene::1390329591294702417::1706438964::0::1::::<><>::res://UI/Camera2D.gd
+Game_Level.tscn::PackedScene::1394682931771699454::1706500568::0::1::::<><>::uid://dps4urjjt42sj::::res://Audio/Levels/Main Menu/XaelSongRemastered(1).mp3
+Game_Over.gd::GDScript::-1::1706397337::0::1::::<>Control<>::
+Game_Over.tscn::PackedScene::6144677436774166933::1706500956::0::1::::<><>::res://UI/Game_Over.gd
+Hotbar.gd::GDScript::-1::1706440801::0::1::::<>Control<>::
+Hotbar.tscn::PackedScene::8381487944048699689::1706471179::0::1::::<><>::res://UI/Hotbar.gd
 MainMenu.gd::GDScript::-1::1706053542::0::1::::<>Control<>::
-MainMenu.tscn::PackedScene::1531219832736951986::1706054030::0::1::::<><>::res://UI/MainMenu.gd<>uid://debbjc3xptl23::::res://Art/Tiles/Background.png<>uid://cisf8hmkj4b7r::::res://Art/Fonts/Title Screen/joystix monospace.otf
+MainMenu.tscn::PackedScene::1531219832736951986::1706383946::0::1::::<><>::res://UI/MainMenu.gd<>uid://debbjc3xptl23::::res://Art/Tiles/Background.png<>uid://cisf8hmkj4b7r::::res://Art/Fonts/Title Screen/joystix monospace.otf<>uid://c6fvxbbnabv5f::::res://Audio/Levels/Main Menu/MainMenu2.mp3
 paused_menu.gd::GDScript::-1::1706053542::0::1::::<>Control<>::
-paused_menu.tscn::PackedScene::3454612264233278219::1706053542::0::1::::<><>::res://UI/paused_menu.gd
-control.tscn::PackedScene::1394682931771699454::1706073371::0::1::::<><>::
+paused_menu.tscn::PackedScene::3454612264233278219::1706397342::0::1::::<><>::res://UI/paused_menu.gd
+Timer.gd::GDScript::-1::1706439985::0::1::::<>Control<>::
+Timer.tscn::PackedScene::1948810794348328261::1706435211::0::1::::<><>::res://UI/Timer.gd<>uid://t2qr4f8xn46h::::res://UI/CameraShake.tscn

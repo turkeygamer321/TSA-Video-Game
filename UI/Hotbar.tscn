@@ -1,50 +1,13 @@
 [gd_scene load_steps=2 format=3 uid="uid://drob48pymwy54"]
 
-[ext_resource type="Texture2D" uid="uid://j5qp4wabvcgd" path="res://Art/Character Holdable Items/Crowbar.png.png" id="1_tsolx"]
+[ext_resource type="Script" path="res://UI/Hotbar.gd" id="1_3xqty"]
 
-[node name="Control" type="Control"]
+[node name="Hotbar" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1.22998
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="GridContainer" type="GridContainer" parent="CanvasLayer"]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -542.0
-offset_right = 2989.0
-offset_bottom = 2206.0
-grow_horizontal = 0
-scale = Vector2(0.151333, 0.151333)
-theme_override_constants/h_separation = 30
-theme_override_constants/v_separation = 30
-columns = 3
-
-[node name="Button" type="Button" parent="CanvasLayer/GridContainer"]
-layout_mode = 2
-icon = ExtResource("1_tsolx")
-
-[node name="Button2" type="Button" parent="CanvasLayer/GridContainer"]
-layout_mode = 2
-icon = ExtResource("1_tsolx")
-
-[node name="Button3" type="Button" parent="CanvasLayer/GridContainer"]
-layout_mode = 2
-icon = ExtResource("1_tsolx")
-
-[node name="Button4" type="Button" parent="CanvasLayer/GridContainer"]
-layout_mode = 2
-icon = ExtResource("1_tsolx")
-
-[node name="Button5" type="Button" parent="CanvasLayer/GridContainer"]
-layout_mode = 2
-icon = ExtResource("1_tsolx")
-
-[node name="Button6" type="Button" parent="CanvasLayer/GridContainer"]
-layout_mode = 2
-icon = ExtResource("1_tsolx")
+script = ExtResource("1_3xqty")

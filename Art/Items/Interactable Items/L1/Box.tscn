@@ -1,0 +1,43 @@
+[gd_scene load_steps=9 format=3 uid="uid://dw76qc3vgnsni"]
+
+[ext_resource type="Texture2D" uid="uid://bucwqx6xroa8j" path="res://Art/Items/Interactable Items/L1/Cardboardbox.png" id="1_78nue"]
+[ext_resource type="Script" path="res://Art/Items/Interactable Items/L1/Box.gd" id="1_yi2vd"]
+[ext_resource type="PackedScene" uid="uid://dche3waxid3mx" path="res://Interaction/Interaction Area/interaction_area.tscn" id="2_4jywm"]
+[ext_resource type="Script" path="res://Inventory/inventory_item.gd" id="2_unu46"]
+[ext_resource type="Texture2D" uid="uid://b4g7ndntf38qd" path="res://Art/Items/Interactable Items/L1/Key-1.png.png" id="3_suhig"]
+
+[sub_resource type="Resource" id="Resource_a8xe5"]
+script = ExtResource("2_unu46")
+name = "Key"
+texture = ExtResource("3_suhig")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgiw5"]
+size = Vector2(19.0236, 16.4415)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2b0o7"]
+size = Vector2(36.7508, 28.0819)
+
+[node name="Box" type="StaticBody2D"]
+position = Vector2(330, 260)
+scale = Vector2(0.134386, 0.134386)
+script = ExtResource("1_yi2vd")
+item = SubResource("Resource_a8xe5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(65.2599, -51.8498)
+texture = ExtResource("1_78nue")
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(59.5298, 195.548)
+scale = Vector2(118.13, 160.469)
+shape = SubResource("RectangleShape2D_mgiw5")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_4jywm")]
+action_name = "open"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="InteractionArea"]
+visible = false
+position = Vector2(44.6474, 126.501)
+scale = Vector2(290.687, 290.687)
+shape = SubResource("RectangleShape2D_2b0o7")
