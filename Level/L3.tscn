@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://8yfhvdihl3wu"]
+[gd_scene load_steps=10 format=3 uid="uid://8yfhvdihl3wu"]
 
 [ext_resource type="Texture2D" uid="uid://cdcaa50sv2ol0" path="res://Art/Tiles/Lvl3.png" id="1_r3bkl"]
 [ext_resource type="PackedScene" uid="uid://bd0dm7nb7hh2w" path="res://Art/Characters/Alex.tscn" id="2_cg3o4"]
 [ext_resource type="PackedScene" uid="uid://b2hcdbwbao2jk" path="res://Level/LevelSwitcher.tscn" id="3_7eahj"]
 [ext_resource type="PackedScene" uid="uid://t4uhvc3mmwhy" path="res://UI/Game_Level.tscn" id="4_5v8x1"]
+[ext_resource type="Texture2D" uid="uid://iyqpky7kbcj8" path="res://Art/Items/pillar.png" id="5_ta1lk"]
+[ext_resource type="PackedScene" uid="uid://u0pldoa4t3gq" path="res://Art/Items/Interactable Items/L1/boxuninteractable.tscn" id="6_f2x0w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7kuf1"]
 texture = ExtResource("1_r3bkl")
@@ -2732,6 +2734,9 @@ texture = ExtResource("1_r3bkl")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7kuf1")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vumwc"]
+size = Vector2(185.104, 126.736)
+
 [node name="L3" type="Node2D"]
 position = Vector2(11, -69)
 scale = Vector2(0.651041, 0.856636)
@@ -2757,3 +2762,81 @@ scale = Vector2(3.86953, 0.058043)
 prev = -1
 
 [node name="Game_Level" parent="." instance=ExtResource("4_5v8x1")]
+
+[node name="Pillar" type="StaticBody2D" parent="."]
+position = Vector2(-90.6241, -64.2046)
+
+[node name="Pillar" type="Sprite2D" parent="Pillar"]
+position = Vector2(614.401, 497.294)
+scale = Vector2(0.147105, 0.147105)
+texture = ExtResource("5_ta1lk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar"]
+position = Vector2(641.657, 615.528)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_vumwc")
+
+[node name="Pillar2" type="StaticBody2D" parent="."]
+position = Vector2(824.833, -64.2046)
+
+[node name="Pillar" type="Sprite2D" parent="Pillar2"]
+position = Vector2(614.401, 497.294)
+scale = Vector2(0.147105, 0.147105)
+texture = ExtResource("5_ta1lk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar2"]
+position = Vector2(641.657, 615.528)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_vumwc")
+
+[node name="Pillar3" type="StaticBody2D" parent="."]
+z_index = 1
+position = Vector2(-90.6241, 489.123)
+
+[node name="Pillar" type="Sprite2D" parent="Pillar3"]
+position = Vector2(614.401, 497.294)
+scale = Vector2(0.147105, 0.147105)
+texture = ExtResource("5_ta1lk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar3"]
+position = Vector2(641.657, 615.528)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_vumwc")
+
+[node name="Pillar4" type="StaticBody2D" parent="."]
+z_index = 1
+position = Vector2(820.225, 489.123)
+
+[node name="Pillar" type="Sprite2D" parent="Pillar4"]
+position = Vector2(614.401, 497.294)
+scale = Vector2(0.147105, 0.147105)
+texture = ExtResource("5_ta1lk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar4"]
+position = Vector2(641.657, 615.528)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_vumwc")
+
+[node name="Box" parent="." instance=ExtResource("6_f2x0w")]
+position = Vector2(333.312, 339.701)
+scale = Vector2(0.0737168, 0.0737168)
+
+[node name="Box2" parent="." instance=ExtResource("6_f2x0w")]
+position = Vector2(1199.62, 414.412)
+scale = Vector2(0.0892076, 0.0892076)
+
+[node name="Box3" parent="." instance=ExtResource("6_f2x0w")]
+position = Vector2(1794.05, 935.053)
+scale = Vector2(0.0626351, 0.0626351)
+
+[node name="Box4" parent="." instance=ExtResource("6_f2x0w")]
+position = Vector2(1697.28, 414.412)
+scale = Vector2(0.0919717, 0.0919717)
+
+[node name="Box5" parent="." instance=ExtResource("6_f2x0w")]
+position = Vector2(1629.7, 884.857)
+scale = Vector2(0.0515204, 0.0515204)
+
+[node name="Box6" parent="." instance=ExtResource("6_f2x0w")]
+position = Vector2(1669.63, 1104.32)
+scale = Vector2(0.0772052, 0.0772052)

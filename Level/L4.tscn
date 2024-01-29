@@ -1,9 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://q0tjbnr1g38g"]
+[gd_scene load_steps=19 format=3 uid="uid://q0tjbnr1g38g"]
 
 [ext_resource type="Texture2D" uid="uid://dhmt23lxxmerj" path="res://Art/Tiles/Lvl4.png" id="1_r307y"]
 [ext_resource type="PackedScene" uid="uid://bd0dm7nb7hh2w" path="res://Art/Characters/Alex.tscn" id="2_uxnln"]
 [ext_resource type="PackedScene" uid="uid://b2hcdbwbao2jk" path="res://Level/LevelSwitcher.tscn" id="3_6rpot"]
 [ext_resource type="PackedScene" uid="uid://t4uhvc3mmwhy" path="res://UI/Game_Level.tscn" id="4_i07lr"]
+[ext_resource type="Texture2D" uid="uid://b26y5u72bmgkq" path="res://Art/Items/Interactable Items/everything else/Mattress (1).png" id="5_qhdr6"]
+[ext_resource type="PackedScene" uid="uid://u0pldoa4t3gq" path="res://Art/Items/Interactable Items/L1/boxuninteractable.tscn" id="6_oi1e4"]
+[ext_resource type="Texture2D" uid="uid://biufjokkip2eo" path="res://Art/Items/Interactable Items/everything else/TSA teddy bear for game (1)-1.png (1).png" id="7_7ru6k"]
+[ext_resource type="Texture2D" uid="uid://cam5vgxbgxu6d" path="res://Art/Items/Interactable Items/everything else/Skateboard.png" id="8_nv2mx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hdgpd"]
 texture = ExtResource("1_r307y")
@@ -2063,6 +2067,60 @@ texture = ExtResource("1_r307y")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_hdgpd")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v81p7"]
+radius = 190.43
+height = 2838.91
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_krt5n"]
+radius = 9.97623
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ab5jc"]
+atlas = ExtResource("8_nv2mx")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_62eix"]
+atlas = ExtResource("8_nv2mx")
+region = Rect2(0, 256, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y5t0t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ab5jc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_62eix")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ek2ti"]
+radius = 6.81274
+height = 13.6255
+
+[sub_resource type="Animation" id="Animation_ogylo"]
+resource_name = "move"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1438.33, 939.308), Vector2(1338.32, 939.308)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sv8jx"]
+_data = {
+"move": SubResource("Animation_ogylo")
+}
+
 [node name="L4" type="Node2D"]
 position = Vector2(3, -47)
 scale = Vector2(0.764083, 0.920891)
@@ -2088,3 +2146,55 @@ scale = Vector2(0.677612, 3.82254)
 prev = -1
 
 [node name="Game_Level" parent="." instance=ExtResource("4_i07lr")]
+
+[node name="Items" type="Node2D" parent="."]
+
+[node name="Matteress" type="StaticBody2D" parent="Items"]
+position = Vector2(98.1569, 28.2335)
+scale = Vector2(0.520248, 0.520248)
+
+[node name="Sprite2D" type="Sprite2D" parent="Items/Matteress"]
+position = Vector2(944.923, 725.385)
+scale = Vector2(0.37187, 0.37187)
+texture = ExtResource("5_qhdr6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Items/Matteress"]
+position = Vector2(976.069, 615.748)
+rotation = 1.5708
+scale = Vector2(0.88657, 0.382636)
+shape = SubResource("CapsuleShape2D_v81p7")
+
+[node name="Box" parent="Items" instance=ExtResource("6_oi1e4")]
+position = Vector2(236.885, 263.875)
+scale = Vector2(0.0487832, 0.0487832)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Items"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Items/StaticBody2D"]
+position = Vector2(986.804, 273.648)
+scale = Vector2(0.576719, 0.576719)
+texture = ExtResource("7_7ru6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Items/StaticBody2D"]
+position = Vector2(984.186, 286.679)
+scale = Vector2(-8.88637, -8.08089)
+shape = SubResource("CircleShape2D_krt5n")
+
+[node name="SkateBoard" type="AnimatedSprite2D" parent="Items"]
+position = Vector2(1438.33, 939.308)
+sprite_frames = SubResource("SpriteFrames_y5t0t")
+frame_progress = 0.728023
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Items/SkateBoard"]
+position = Vector2(-1442.25, -888.27)
+scale = Vector2(1.30876, 1.0859)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Items/SkateBoard/StaticBody2D"]
+position = Vector2(1102, 803)
+scale = Vector2(12.324, 3.81638)
+shape = SubResource("CapsuleShape2D_ek2ti")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Items/SkateBoard"]
+libraries = {
+"": SubResource("AnimationLibrary_sv8jx")
+}

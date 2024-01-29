@@ -29,3 +29,8 @@ res://Inv_slot.gd
 res://Inventory/inventory.gd
 res://Art/Items/Interactable Items/L1/key.tscn
 res://UI/Game_Over.tscn
+res://UI/Game_Over.gd
+res://UI/paused_menu.tscn
+res://Cat.gd
+res://Art/Items/Interactable Items/L1/cat.tscn
+res://Art/Items/Interactable Items/L1/boxuninteractable.tscn
