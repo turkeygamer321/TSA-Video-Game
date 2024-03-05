@@ -10,15 +10,14 @@ config_version=5
 
 [application]
 
-config/name="RichlandTSA"
+config/name="A Midnight Escape"
 config/description="2023 - 2024 Video Game Design"
-run/main_scene="res://UI/MainMenu.tscn"
+run/main_scene="res://UI/Menus/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 
 [autoload]
 
 InteractionManager="*res://Interaction/InteractionManager.tscn"
-GlobalTimer="*res://UI/Timer.tscn"
 
 [display]
 
@@ -67,3 +66,4 @@ interact={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2hcdbwbao2jk"]
 
-[ext_resource type="Script" path="res://Level/LevelSwitcher.gd" id="1_j8jdl"]
+[ext_resource type="Script" path="res://Level/Basement/Logistics/LevelSwitcher.gd" id="1_j8jdl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_owgct"]
 
