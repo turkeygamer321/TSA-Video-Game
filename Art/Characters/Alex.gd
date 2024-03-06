@@ -39,5 +39,3 @@ func pick_new_state():
 
 func collect(item):
 	inv.insert(item)
-
-

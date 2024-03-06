@@ -2,14 +2,15 @@
 
 [ext_resource type="Script" path="res://Level/Basement/Logistics/LevelSwitcher.gd" id="1_j8jdl"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_owgct"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iml4s"]
 
 [node name="LevelSwitcher" type="Area2D"]
+collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_j8jdl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(5.80835, 5.80835)
-shape = SubResource("RectangleShape2D_owgct")
+shape = SubResource("RectangleShape2D_iml4s")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

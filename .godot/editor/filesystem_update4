@@ -1,11 +1,7 @@
-res://Level/Attic/Scenes/L10.tscn
+res://Level/Basement/Logistics/LevelSwitcher.tscn
 res://Art/Items/Interactable Items/L1/Box.gd
 res://Level/Basement/Logistics/LevelSwitcher.gd
 res://Inventory/playerinv.tres
-res://UI/Menus/MainMenu.tscn
-res://Level/Basement/Logistics/LevelSwitcher.tscn
-res://Level/Ground Floor/Level_Scenes/L6.tscn
-res://Level/Ground Floor/Level_Scenes/L7.tscn
-res://Level/Ground Floor/Level_Scenes/L8.tscn
-res://Level/Ground Floor/Level_Scenes/L9.tscn
-res://Level/Attic/Scenes/L11.tscn
+res://Level/Basement/Scenes/L1.tscn
+res://Art/Characters/Alex.tscn
+res://Level/Basement/Scenes/L2.tscn
