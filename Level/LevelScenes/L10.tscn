@@ -34133,7 +34133,7 @@ texture = ExtResource("3_s6lru")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_mi833")
 
-[node name="GF1" type="Node2D"]
+[node name="L10" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(0.961154, 0.961154)

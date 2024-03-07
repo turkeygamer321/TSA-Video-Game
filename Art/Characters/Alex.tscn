@@ -273,3 +273,4 @@ parameters/Walk/blend_position = Vector2(-0.405927, 0.321586)
 [node name="PausedMenu" parent="CanvasLayer" instance=ExtResource("4_rs4kl")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false

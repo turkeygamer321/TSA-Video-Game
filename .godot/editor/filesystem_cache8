@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709839111
+::res://::1709840228
 export_presets.cfg::TextFile::-1::1706519746::0::1::::<><>::
 ::res://Art/::1706053542
 ::res://Art/Character Holdable Items/::1706053564
 Crowbar.png.png::CompressedTexture2D::694630741321937167::1706053542::1706053564::1::::<><>::
-::res://Art/Characters/::1709830815
+::res://Art/Characters/::1709840179
 Alex.gd::GDScript::-1::1709671198::0::1::::<>CharacterBody2D<>::
-Alex.tscn::PackedScene::2648801939881995104::1709830815::0::1::::<><>::res://Art/Characters/Alex.gd<>uid://8pou6sui6m7i::::res://Art/Characters/Character_SpriteSheet.png<>uid://7qhf5mjydr8i::::res://Inventory/playerinv.tres<>uid://bpho7u6axxfpr::::res://UI/Menus/paused_menu.tscn
+Alex.tscn::PackedScene::2648801939881995104::1709840179::0::1::::<><>::res://Art/Characters/Alex.gd<>uid://8pou6sui6m7i::::res://Art/Characters/Character_SpriteSheet.png<>uid://7qhf5mjydr8i::::res://Inventory/playerinv.tres<>uid://bpho7u6axxfpr::::res://UI/Menus/paused_menu.tscn
 Character_SpriteSheet.png::CompressedTexture2D::2348084917093760240::1706400718::1706401264::1::::<><>::
 Crowbar.png::CompressedTexture2D::5954286422872660519::1706053542::1706053576::1::::<><>::
 ::res://Art/Fonts/::1706053542
@@ -27,8 +27,8 @@ Table.png::CompressedTexture2D::4955020088934278767::1706519299::1706519359::1::
 TSA teddy bear for game (1)-1.png (1).png::CompressedTexture2D::2989539396228144058::1706508544::1706508599::1::::<><>::
 TSA_ Soccer ball for game -1.png.png::CompressedTexture2D::5261956597433441010::1706516038::1706516060::1::::<><>::
 WinScreen.png::CompressedTexture2D::6150378156050503761::1706518734::1706518765::1::::<><>::
-::res://Art/Items/Interactable Items/L1/::1709830815
-Box.gd::GDScript::-1::1709830815::0::1::::<>StaticBody2D<>::
+::res://Art/Items/Interactable Items/L1/::1709839163
+Box.gd::GDScript::-1::1709839163::0::1::::<>StaticBody2D<>::
 Box.tscn::PackedScene::8771387647988085234::1709066584::0::1::::<><>::uid://bucwqx6xroa8j::::res://Art/Items/Interactable Items/L1/Cardboardbox.png<>res://Art/Items/Interactable Items/L1/Box.gd<>uid://dche3waxid3mx::::res://Interaction/Interaction Area/interaction_area.tscn
 boxuninteractable.tscn::PackedScene::1456316894473438260::1707926657::0::1::::<><>::uid://bucwqx6xroa8j::::res://Art/Items/Interactable Items/L1/Cardboardbox.png
 Cardboardbox.png::CompressedTexture2D::3795691915499482891::1706483599::1706483907::1::::<><>::
@@ -75,7 +75,7 @@ InteractionManager.tscn::PackedScene::6143843955560563437::1706383946::0::1::::<
 ::res://Interaction/Interaction Area/::1706383946
 interaction_area.gd::GDScript::-1::1706115967::0::1::::InteractionArea<>Area2D<>::
 interaction_area.tscn::PackedScene::7314384409403748631::1706383946::0::1::::<><>::res://Interaction/Interaction Area/interaction_area.gd
-::res://Inventory/::1709830815
+::res://Inventory/::1709839163
 inventory.gd::GDScript::-1::1706495325::0::1::::Inv<>Resource<>::
 inventory_item.gd::GDScript::-1::1706469168::0::1::::InvItem<>Resource<>::
 Inv_slot.gd::GDScript::-1::1706492929::0::1::::InvSlot<>Resource<>::
@@ -83,7 +83,7 @@ Inv_UI.gd::GDScript::-1::1706495325::0::1::::<>Control<>::
 inv_ui.tscn::PackedScene::5605882018797250438::1707000120::0::1::::<><>::uid://dykrrmgtoam4a::::res://Inventory/inv_ui_slot.tscn
 inv_ui_slot.gd::GDScript::-1::1706492793::0::1::::<>Panel<>::
 inv_ui_slot.tscn::PackedScene::8865501263737116106::1706500568::0::1::::<><>::res://Inventory/inv_ui_slot.gd
-playerinv.tres::Resource/Inv::2279508583080169318::1709830815::0::1::::<><>::res://Inventory/inventory.gd<>res://Inventory/Inv_slot.gd
+playerinv.tres::Resource/Inv::2279508583080169318::1709839163::0::1::::<><>::res://Inventory/inventory.gd<>res://Inventory/Inv_slot.gd
 ::res://Inventory/Items/::1706487132
 crowbar.tres::Resource/Resource::1115879749973897190::1706487132::0::1::::<><>::res://Inventory/inventory_item.gd<>uid://cq3khy62cmw6r::::res://Art/Characters/Crowbar.png
 ::res://Level/::1709759880
@@ -94,9 +94,9 @@ SkateBoard.gd::GDScript::-1::1706515404::0::1::::<>AnimatedSprite2D<>::
 Attic1.png::CompressedTexture2D::2380985606880875467::1709617602::1709617633::1::::<><>::
 Attic2.png::CompressedTexture2D::7596922721148077352::1709617606::1709617633::1::::<><>::
 ::res://Level/Basement/::1709759867
-::res://Level/Basement/Logistics/::1709832098
-LevelSwitcher.gd::GDScript::-1::1709831769::0::1::::<>Area2D<>::
-LevelSwitcher.tscn::PackedScene::4296096984120705976::1709832098::0::1::::<><>::res://Level/Basement/Logistics/LevelSwitcher.gd
+::res://Level/Basement/Logistics/::1709840165
+LevelSwitcher.gd::GDScript::-1::1709839163::0::1::::<>Area2D<>::
+LevelSwitcher.tscn::PackedScene::4296096984120705976::1709840165::0::1::::<><>::res://Level/Basement/Logistics/LevelSwitcher.gd
 ::res://Level/Basement/Tile_Maps/::1709617296
 Lvl1.png::CompressedTexture2D::5186921013609604222::1706053542::1709066485::1::::<><>::
 Lvl2.png::CompressedTexture2D::5092877536297188961::1706053542::1709066485::1::::<><>::
@@ -109,17 +109,17 @@ Ground Floor 1.png::CompressedTexture2D::4969444165253943575::1708967167::170906
 Ground floor 2.png::CompressedTexture2D::4169782201915243306::1708967167::1709066485::1::::<><>::
 Ground floor 3.png::CompressedTexture2D::4821205401879133393::1708967167::1709066485::1::::<><>::
 Ground floor 4.png::CompressedTexture2D::9069078035601665222::1708967167::1709066485::1::::<><>::
-::res://Level/LevelScenes/::1709832139
-L1.tscn::PackedScene::2489367369652946401::1709832098::0::1::::<><>::uid://cf5t3i7pncthe::::res://Level/Basement/Tile_Maps/Lvl1.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
-L2.tscn::PackedScene::7157667446342648392::1709832099::0::1::::<><>::uid://ceta7i8kfjysf::::res://Level/Basement/Tile_Maps/Lvl2.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://t4uhvc3mmwhy::::res://UI/Logistics/Game_Level.tscn<>uid://bbxc71amac0jk::::res://Art/Items/pictureframe.png<>uid://c7skudgmqbrd1::::res://Art/Items/rug2.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
-L3.tscn::PackedScene::2366094099671739384::1709832139::0::1::::<><>::uid://ty2bf7kardks::::res://Level/Basement/Tile_Maps/Room3.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Logistics/Game_Level.tscn<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn
-L4.tscn::PackedScene::1175800710480943240::1709832102::0::1::::<><>::uid://dd6sodaq23o48::::res://Level/Basement/Tile_Maps/Room4.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Logistics/Game_Level.tscn<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn
-L5.tscn::PackedScene::2396176673460464848::1709832102::0::1::::<><>::uid://bd8umxfk7e7kb::::res://Level/Basement/Tile_Maps/Lvl5.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Logistics/Game_Level.tscn<>uid://b1emivo01aw2i::::res://Art/Items/Interactable Items/everything else/chair.png<>uid://ccuipshclpph4::::res://Art/Items/Interactable Items/everything else/Table.png<>uid://ds5xqipwkp6xa::::res://Art/Items/Interactable Items/everything else/rug.png
-L6.tscn::PackedScene::6018272660341508875::1709832104::0::1::::<><>::uid://cc2iawm2i3xsx::::res://Level/Ground Floor/Tile_Maps/Ground Floor 1.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
-L7.tscn::PackedScene::1529653591884246044::1709832106::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b0n4x6omquf1c::::res://Level/Ground Floor/Tile_Maps/Ground floor 2.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
-L8.tscn::PackedScene::6342193087824659778::1709832107::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://caxoswfp55km8::::res://Level/Ground Floor/Tile_Maps/Ground floor 3.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
-L9.tscn::PackedScene::2637873356417521201::1709832109::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://d2henjd5ngdyk::::res://Level/Ground Floor/Tile_Maps/Ground floor 4.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
-L10.tscn::PackedScene::4656125140283275973::1709832112::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://86mqq0sraip4::::res://Level/Attic/TileSets/Attic1.png<>uid://dgiahbvpd0blw::::res://Level/Attic/TileSets/Attic2.png
+::res://Level/LevelScenes/::1709840179
+L1.tscn::PackedScene::2489367369652946401::1709840165::0::1::::<><>::uid://cf5t3i7pncthe::::res://Level/Basement/Tile_Maps/Lvl1.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
+L2.tscn::PackedScene::7157667446342648392::1709840166::0::1::::<><>::uid://ceta7i8kfjysf::::res://Level/Basement/Tile_Maps/Lvl2.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://t4uhvc3mmwhy::::res://UI/Logistics/Game_Level.tscn<>uid://bbxc71amac0jk::::res://Art/Items/pictureframe.png<>uid://c7skudgmqbrd1::::res://Art/Items/rug2.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
+L3.tscn::PackedScene::2366094099671739384::1709840167::0::1::::<><>::uid://ty2bf7kardks::::res://Level/Basement/Tile_Maps/Room3.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Logistics/Game_Level.tscn<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn
+L4.tscn::PackedScene::1175800710480943240::1709840169::0::1::::<><>::uid://dd6sodaq23o48::::res://Level/Basement/Tile_Maps/Room4.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Logistics/Game_Level.tscn<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn
+L5.tscn::PackedScene::2396176673460464848::1709840169::0::1::::<><>::uid://bd8umxfk7e7kb::::res://Level/Basement/Tile_Maps/Lvl5.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn<>uid://t4uhvc3mmwhy::::res://UI/Logistics/Game_Level.tscn
+L6.tscn::PackedScene::6018272660341508875::1709840171::0::1::::<><>::uid://cc2iawm2i3xsx::::res://Level/Ground Floor/Tile_Maps/Ground Floor 1.png<>uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
+L7.tscn::PackedScene::1529653591884246044::1709840172::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://b0n4x6omquf1c::::res://Level/Ground Floor/Tile_Maps/Ground floor 2.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
+L8.tscn::PackedScene::6342193087824659778::1709840174::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://caxoswfp55km8::::res://Level/Ground Floor/Tile_Maps/Ground floor 3.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
+L9.tscn::PackedScene::2637873356417521201::1709840176::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://d2henjd5ngdyk::::res://Level/Ground Floor/Tile_Maps/Ground floor 4.png<>uid://b2hcdbwbao2jk::::res://Level/Basement/Logistics/LevelSwitcher.tscn
+L10.tscn::PackedScene::4656125140283275973::1709840179::0::1::::<><>::uid://bd0dm7nb7hh2w::::res://Art/Characters/Alex.tscn<>uid://86mqq0sraip4::::res://Level/Attic/TileSets/Attic1.png<>uid://dgiahbvpd0blw::::res://Level/Attic/TileSets/Attic2.png
 ::res://Level/Level_Scenes/::1709759894
 ::res://UI/::1709068905
 Camera2D.gd::GDScript::-1::1706347159::0::1::::<>Camera2D<>::

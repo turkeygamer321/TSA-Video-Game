@@ -17072,9 +17072,9 @@ texture = ExtResource("1_i1d68")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ygte5")
 
-[node name="L1-3" type="Node2D"]
-position = Vector2(11, -69)
-scale = Vector2(0.651041, 0.856636)
+[node name="L3" type="Node2D"]
+position = Vector2(-81, -185)
+scale = Vector2(0.78113, 1.02781)
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(1.59485, 1.02239)
@@ -17085,7 +17085,9 @@ layer_0/tile_data = PackedInt32Array(393214, 0, 0, 458750, 0, 1, 524286, 0, 2, 5
 [node name="Game_Level" parent="." instance=ExtResource("4_xqpt0")]
 
 [node name="Alex" parent="." instance=ExtResource("5_32py6")]
-position = Vector2(884.737, 843.999)
-scale = Vector2(6.84945, 7.74285)
+position = Vector2(282.923, 738.466)
+scale = Vector2(8.36996, 9.46169)
 
 [node name="LevelSwitcher" parent="." instance=ExtResource("4_gbwat")]
+position = Vector2(1271.81, 1207.05)
+scale = Vector2(27.8689, 0.683912)
