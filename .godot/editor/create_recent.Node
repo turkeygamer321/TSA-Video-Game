@@ -1,4 +1,5 @@
 CollisionShape2D
+Area2D
 TileMap
 Camera2D
 Sprite2D
@@ -11,4 +12,3 @@ AnimationPlayer
 AnimatedSprite2D
 BoxContainer
 CollisionPolygon2D
-Node2D

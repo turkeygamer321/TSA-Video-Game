@@ -1,7 +1,18 @@
 res://Level/Basement/Logistics/LevelSwitcher.tscn
 res://Art/Items/Interactable Items/L1/Box.gd
 res://Level/Basement/Logistics/LevelSwitcher.gd
+res://Level/Basement/Logistics/switch_levels.gd
 res://Inventory/playerinv.tres
-res://Level/Basement/Scenes/L1.tscn
+res://Level/Basement/Logistics/switch_levels.tscn
+res://Level/LevelScenes/L1.tscn
+res://Level/LevelScenes/L2.tscn
 res://Art/Characters/Alex.tscn
-res://Level/Basement/Scenes/L2.tscn
+res://UI/Menus/MainMenu.tscn
+res://Level/LevelScenes/L3.tscn
+res://Level/LevelScenes/L4.tscn
+res://Level/LevelScenes/L5.tscn
+res://Level/LevelScenes/L6.tscn
+res://Level/LevelScenes/L7.tscn
+res://Level/LevelScenes/L9.tscn
+res://Level/LevelScenes/L8.tscn
+res://Level/LevelScenes/L10.tscn

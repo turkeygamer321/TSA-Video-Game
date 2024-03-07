@@ -4,7 +4,7 @@ func _ready():
 	$VBoxContainer/StartButton.grab_focus()
 
 func _on_start_button_pressed():
-	get_tree().change_scene_to_file("res://Level/Basement/Scenes/L1.tscn")
+	get_tree().change_scene_to_file("res://Level/LevelScenes/L1.tscn")
 
 
 func _on_options_button_pressed():
