@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bbp4rtrlomg0x"]
+[gd_scene load_steps=11 format=3 uid="uid://bbp4rtrlomg0x"]
 
 [ext_resource type="Texture2D" uid="uid://cf5t3i7pncthe" path="res://Level/Basement/Tile_Maps/Lvl1.png" id="1_y560h"]
 [ext_resource type="PackedScene" uid="uid://bd0dm7nb7hh2w" path="res://Art/Characters/Alex.tscn" id="2_nme3g"]
 [ext_resource type="PackedScene" uid="uid://b2hcdbwbao2jk" path="res://Level/Basement/Logistics/LevelSwitcher.tscn" id="3_15rlw"]
+[ext_resource type="Script" path="res://Level/LevelScenes/StaticBody2D.gd" id="4_ba0xp"]
+[ext_resource type="Texture2D" uid="uid://b3lq6elv1vkia" path="res://Level/Basement/Items/Cardboardbox.png" id="4_llacg"]
+[ext_resource type="PackedScene" uid="uid://dche3waxid3mx" path="res://Interaction/Interaction Area/interaction_area.tscn" id="5_m4j41"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h7l6e"]
 texture = ExtResource("1_y560h")
@@ -2751,6 +2754,12 @@ texture = ExtResource("1_y560h")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_h7l6e")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpsc6"]
+size = Vector2(41.2006, 14.7966)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uufng"]
+size = Vector2(56.9697, 42.65)
+
 [node name="L1" type="Node2D"]
 position = Vector2(-54, -34)
 scale = Vector2(2.13589, 3.23319)
@@ -2767,3 +2776,32 @@ scale = Vector2(2.5, 2.826)
 [node name="LevelSwitcher" parent="." instance=ExtResource("3_15rlw")]
 position = Vector2(239.69, 78.3762)
 scale = Vector2(3.06259, 1.11477)
+
+[node name="Items -Rasheed\'s Example _)" type="Node2D" parent="."]
+
+[node name="Cardbord Box" type="StaticBody2D" parent="Items -Rasheed\'s Example _)"]
+scale = Vector2(0.994407, 0.899233)
+script = ExtResource("4_ba0xp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Items -Rasheed\'s Example _)/Cardbord Box"]
+position = Vector2(541.226, 132.386)
+scale = Vector2(0.0185525, 0.013521)
+texture = ExtResource("4_llacg")
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Items -Rasheed\'s Example _)/Cardbord Box"]
+position = Vector2(541.227, 146.011)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_rpsc6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Items -Rasheed\'s Example _)/Cardbord Box/CollisionShape2D"]
+
+[node name="InteractionArea" parent="Items -Rasheed\'s Example _)/Cardbord Box/CollisionShape2D/CanvasLayer" instance=ExtResource("5_m4j41")]
+position = Vector2(-54, -34)
+scale = Vector2(2.12394, 2.90739)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Items -Rasheed\'s Example _)/Cardbord Box/CollisionShape2D/CanvasLayer/InteractionArea"]
+z_index = 2
+position = Vector2(540.74, 138.956)
+scale = Vector2(-3.37189, -3.37189)
+shape = SubResource("RectangleShape2D_uufng")
